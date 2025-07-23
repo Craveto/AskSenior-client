@@ -1,0 +1,107 @@
+/* Gradient background and full-page layout */
+.landing-hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec, #ede7f6);
+  background-size: cover;
+  padding: 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+/* Header with logo and button */
+.landing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.get-started-btn {
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #5a49d1;
+}
+
+/* Main hero content */
+.landing-main {
+  text-align: center;
+  margin-top: 8vh;
+}
+
+.landing-main h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.highlight {
+  color: #6a5acd;
+}
+
+.landing-main p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Call-to-action buttons */
+.cta-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.9rem 1.7rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.btn.secondary {
+  background-color: white;
+  color: #4f46e5;
+  border: 2px solid #4f46e5;
+}
+
+/* Trusted info */
+.trusted-info {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  color: #374151;
+}
+
+.avatars img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin-left: -8px;
+  border: 2px solid white;
+}
