@@ -10,13 +10,13 @@ const PostFeed = () => {
   const [posts, setPosts] = useState([]);
 
   const fetchPosts = async () => {
-    const res = await axios.get("http://localhost:5000/api/posts");
+    const res = await axios.get("https://asksenior-server.onrender.com/api/posts");
     setPosts(res.data);
   };
 
   const handlePost = async () => {
     if (!question.trim()) return;
-    await axios.post("http://localhost:5000/api/posts/create", {
+    await axios.post("https://asksenior-server.onrender.com/api/posts/create", {
       question,
       askedBy: {
         name: user.fullName,
@@ -29,7 +29,7 @@ const PostFeed = () => {
   };
 
   const handleDelete = async (id) => {
-    await axios.delete(`http://localhost:5000/api/posts/${id}`);
+    await axios.delete(`https://asksenior-server.onrender.com/api/posts/${id}`);
     fetchPosts();
   };
 

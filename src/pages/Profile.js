@@ -9,7 +9,7 @@ const Profile = () => {
   useEffect(() => {
     const saveUserToDB = async () => {
       try {
-        const res = await axios.post("http://localhost:5000/api/users/register", {
+        const res = await axios.post("https://asksenior-server.onrender.com/api/users/register", {
           name: user.fullName,
           email: user.primaryEmailAddress.emailAddress,
           photo: user.imageUrl,

@@ -11,7 +11,7 @@ const RoleSelect = () => {
 
   const selectRole = async (role) => {
     try {
-      await axios.post("http://localhost:5000/api/users/register", {
+      await axios.post("https://asksenior-server.onrender.com/api/users/register", {
         name: user.fullName,
         email: user.primaryEmailAddress.emailAddress,
         photo: user.imageUrl,
